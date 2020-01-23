@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import Card from './Card';
 
 const CardList = ({Robots}) => {
     
     return(
-        <div>
+        <Fragment>
             {
                 Robots.map((user,i)=>{
                 return(
@@ -15,7 +15,7 @@ const CardList = ({Robots}) => {
        );
     })
             }
-        </div>
+        </Fragment>
     );
 }
 
