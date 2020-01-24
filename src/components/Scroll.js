@@ -1,13 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-const Scroll  = (props) => {
-    return (
-        <Fragment>
-            <div style={{overflowY :'scroll', border:'5px solid black', height:'800px'}}>
-                 {props.children}
-            </div>
-        </Fragment>
-    )
+const Scroll = (props) => {
+  return (
+    <div style={{ overflow: 'scroll', border: '5px solid black', height: '800px'}}>
+      {props.children}
+    </div>
+  );
 };
 
 export default Scroll;

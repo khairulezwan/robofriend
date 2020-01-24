@@ -1,23 +1,23 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Card from './Card';
 
-const CardList = ({Robots}) => {
-    
-    return(
-        <Fragment>
-            {
-                Robots.map((user,i)=>{
-                return(
-                <Card 
-                key={i} 
-                id={Robots[i].id} 
-                name={Robots[i].name} 
-                email={Robots[i].email}/>
-       );
-    })
-            }
-        </Fragment>
-    );
+const CardList = ({ robots }) => {
+  return (
+    <div>
+      {
+        robots.map((user, i) => {
+          return (
+            <Card
+              key={i}
+              id={robots[i].id}
+              name={robots[i].name}
+              email={robots[i].email}
+              />
+          );
+        })
+      }
+    </div>
+  );
 }
 
 export default CardList;
